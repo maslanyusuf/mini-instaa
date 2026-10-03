@@ -1,8 +1,18 @@
 from django.shortcuts import render
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from .models import Post
 
 def feed(request):
-    posts = Post.published.all()
+    all_posts = Post.published.all()
+    # Paginate the posts, 10 per page
+    paginator = Paginator(all_posts, 1)
+    page_number = request.GET.get('page', 1)
+    try:
+        posts = paginator.page(page_number)
+    except PageNotAnInteger:
+        posts = paginator.page(1)
+    except EmptyPage:
+        posts = paginator.page(paginator.num_pages)
     return render(request, 'feed.html', {'posts': posts})
 
 
