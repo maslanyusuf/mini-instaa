@@ -1,13 +1,16 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h2>Feed</h2>
-  <p>Welcome to your feed!</p>
+  <p class="lead">Welcome to your feed!</p>
 
-  {{ posts|length }} posts available.<ul>
+  <div class="mb-3 bg-light p-3 rounded">
+    <p class="mb-0">{{ posts|length }} posts available.</p>
+  </div>
+
+  <ul class="list-unstyled">
     {% for post in posts %}
-      <li>
-        {% include 'partials/_post.html' with post=post %}
+      <li class="mb-3">
+        {% include 'partials/_post_item.html' with post=post %}
       </li>
     {% empty %}
       <li>No posts available.</li>

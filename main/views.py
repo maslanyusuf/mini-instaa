@@ -9,7 +9,7 @@ from .models import Post,Comment
 def feed(request):
     all_posts = Post.published.all()
     # Paginate the posts, 10 per page
-    paginator = Paginator(all_posts, 1)
+    paginator = Paginator(all_posts, 10)
     page_number = request.GET.get('page', 1)
     try:
         posts = paginator.page(page_number)
