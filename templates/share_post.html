@@ -4,9 +4,18 @@
   <h2>Share Post</h2>
   <p>Share this post with your friends!</p>
 
-  <form method="post">
+  <form method="post" novalidate>
     {% csrf_token %}
-    {{ form.as_p }}
+
+    {% for field in form %}
+      <div class="form-group">
+        <label for="{{ field.id_for_label }}">{{ field.label_tag }}</label>
+        {{ field }}
+        {% if field.errors %}
+          <div class="error">{{ field.errors }}</div>
+        {% endif %}
+      </div>
+    {% endfor %}
     <button type="submit">Send</button>
   </form>
 {% endblock %}

@@ -1,3 +1,4 @@
+from django.core.mail import send_mail
 from django.shortcuts import render
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
@@ -33,13 +34,20 @@ def share_post(request, post_id):
         return render(request, '404.html', status=404)
 
     form = SharePostForm()
-
+    sent = False
     if request.method == 'POST':
         form = SharePostForm(request.POST)
         if form.is_valid():
+            post_url = request.build_absolute_uri(post.get_absolute_url())
             # Here you would typically send the email
+            subject = f"{form.cleaned_data['name']} ({form.cleaned_data['email']}) recommends you read \"{post.title}\""
+            message = f"Read \"{post.title}\" at {post_url}\n\n{form.cleaned_data['name']}\'s comments: {form.cleaned_data['comments']}"
+
+            send_mail(subject, message, form.cleaned_data['email'], [form.cleaned_data['to']])
+            sent = True
+
             # For now, we just render a success message
-            return render(request, 'share_post_success.html', {'post': post, 'form': form.cleaned_data})
+            return render(request, 'share_post_success.html', {'post': post, 'form': form.cleaned_data, 'sent': sent})
 
     return render(request, 'share_post.html', {'post': post, 'form': form})
 
