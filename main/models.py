@@ -2,7 +2,7 @@ from django.db import models
 from django.utils.text import slugify
 from django.utils import timezone
 from django.contrib.auth.models import User
-
+from django.urls import reverse
 
 class PublishedManager(models.Manager):
     def get_queryset(self):
@@ -16,7 +16,7 @@ class Post(models.Model):
         PUBLISHED = 'published', 'Published'
 
     title = models.CharField(max_length=200)
-    slug = models.SlugField(unique=True)
+    slug = models.SlugField(unique=True,unique_for_date='published_at')
     content = models.TextField()
     status = models.CharField(max_length=20, choices=Status.choices, default=Status.DRAFT)
     published_at = models.DateTimeField(default=timezone.now)
@@ -35,9 +35,14 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+    def get_absolute_url(self):
+        return reverse("main:post_detail",kwargs={"year": self.published_at.year, "month": self.published_at.month, "slug": self.slug,})
+
     class Meta:
         ordering = ['-published_at']
         indexes = [
             models.Index(fields=['slug']),
             models.Index(fields=['published_at']),
         ]
+
+

@@ -1,5 +1,16 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h1>Feed Page</h1>
+  <h2>Feed</h2>
+  <p>Welcome to your feed!</p>
+
+  {{ posts|length }} posts available.<ul>
+    {% for post in posts %}
+      <li>
+        {% include 'partials/_post.html' with post=post %}
+      </li>
+    {% empty %}
+      <li>No posts available.</li>
+    {% endfor %}
+  </ul>
 {% endblock %}

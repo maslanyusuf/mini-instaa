@@ -6,9 +6,9 @@ def feed(request):
     return render(request, 'feed.html', {'posts': posts})
 
 
-def post_detail(request, slug):
+def post_detail(request, year, month, slug):
     try:
-        post = Post.published.get(slug=slug)
+        post = Post.published.get(slug=slug, published_at__year=year, published_at__month=month)
     except Post.DoesNotExist:
         return render(request, '404.html', status=404)
     return render(request, 'post_detail.html', {'post': post})
