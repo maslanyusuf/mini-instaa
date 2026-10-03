@@ -6,4 +6,12 @@
   <div class="post-content">{{ post.content|linebreaks }}</div>
 
   <a href="{{ post.get_share_url }}">Share this post</a>
+  <a href="{{ post.get_comment_url }}">Add a comment</a>
+
+  <h2>{{ comments.count }} comment{{ comments.count|pluralize }}</h2>
+
+  <div>
+    {% include 'includes/comments-list.html' %}
+    {% include 'includes/comment-form.html' %}
+  </div>
 {% endblock %}

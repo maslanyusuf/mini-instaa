@@ -1,0 +1,8 @@
+<ul>
+  {% for comment in comments %}
+    <li>
+      <p>{{ comment.content }}</p>
+      <p>By {{ comment.author.username }} on {{ comment.created_at|date:'F j, Y' }}</p>
+    </li>
+  {% endfor %}
+</ul>

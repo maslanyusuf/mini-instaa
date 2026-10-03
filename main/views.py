@@ -1,9 +1,10 @@
 from django.core.mail import send_mail
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.views.decorators.http import require_POST
 
-from main.forms import SharePostForm
-from .models import Post
+from main.forms import SharePostForm,CommentForm
+from .models import Post,Comment
 
 def feed(request):
     all_posts = Post.published.all()
@@ -24,8 +25,32 @@ def post_detail(request, year, month, slug):
         post = Post.published.get(slug=slug, published_at__year=year, published_at__month=month)
     except Post.DoesNotExist:
         return render(request, '404.html', status=404)
-    return render(request, 'post_detail.html', {'post': post})
 
+    comments = post.comments.all()
+    form = CommentForm()
+    return render(request, 'post_detail.html', {'post': post, 'comments': comments, 'form': form})
+
+
+@require_POST
+def add_comment(request, post_id):
+    try:
+        post = Post.published.get(id=post_id)
+    except Post.DoesNotExist:
+        return render(request, '404.html', status=404)
+
+    form = CommentForm(request.POST)
+    if form.is_valid():
+        comment = form.save(commit=False)
+        comment.post = post
+        comment.save()
+        return redirect(post.get_absolute_url())
+
+    comments = post.comments.all()
+    return render(request, 'post_detail.html', {
+        'post': post,
+        'comments': comments,
+        'form': form,
+    })
 
 def share_post(request, post_id):
     try:
