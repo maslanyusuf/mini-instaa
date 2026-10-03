@@ -38,6 +38,9 @@ class Post(models.Model):
     def get_absolute_url(self):
         return reverse("main:post_detail",kwargs={"year": self.published_at.year, "month": self.published_at.month, "slug": self.slug,})
 
+    def get_share_url(self):
+        return reverse("main:share_post", kwargs={"post_id": self.id})
+
     class Meta:
         ordering = ['-published_at']
         indexes = [
