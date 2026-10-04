@@ -3,7 +3,7 @@ from django.utils.text import slugify
 from django.utils import timezone
 from django.contrib.auth.models import User
 from django.urls import reverse
-
+from taggit.managers import TaggableManager
 class PublishedManager(models.Manager):
     def get_queryset(self):
         return super().get_queryset().filter(status=Post.Status.PUBLISHED)
@@ -26,6 +26,7 @@ class Post(models.Model):
 
     objects = models.Manager()  # The default manager.
     published = PublishedManager()  # Our custom manager.
+    tags = TaggableManager() # Add a tag manager to the Post model
 
     def save(self, *args, **kwargs):
         if not self.slug:

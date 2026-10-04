@@ -2,12 +2,20 @@ from django.core.mail import send_mail
 from django.shortcuts import redirect, render
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.decorators.http import require_POST
-
+from taggit.models import Tag
 from main.forms import SharePostForm,CommentForm
 from .models import Post,Comment
 
-def feed(request):
+def feed(request,tag_slug=None):
     all_posts = Post.published.all()
+    tags = Tag.objects.all()
+    tag = None
+    if tag_slug:
+        try:
+            tag = Tag.objects.get(slug=tag_slug)
+            all_posts = all_posts.filter(tags__in=[tag])
+        except Tag.DoesNotExist:
+            tag = None
     # Paginate the posts, 10 per page
     paginator = Paginator(all_posts, 10)
     page_number = request.GET.get('page', 1)
@@ -17,7 +25,7 @@ def feed(request):
         posts = paginator.page(1)
     except EmptyPage:
         posts = paginator.page(paginator.num_pages)
-    return render(request, 'feed.html', {'posts': posts})
+    return render(request, 'feed.html', {'posts': posts, 'tag': tag, 'tags': tags})
 
 
 def post_detail(request, year, month, slug):

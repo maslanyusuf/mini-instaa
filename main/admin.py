@@ -3,6 +3,7 @@ from django.contrib import admin
 # Register your models here.
 from .models import Post,Comment
 
+
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
     # List View
@@ -15,10 +16,11 @@ class PostAdmin(admin.ModelAdmin):
     readonly_fields = ('created_at', 'updated_at')
 
 
+
     # Detail And Edit View
     fieldsets = (
         (None, {
-            'fields': ('title', 'slug', 'content', 'status', 'published_at', 'author','created_at', 'updated_at')
+            'fields': ('title', 'slug', 'content', 'status', 'published_at','tags', 'author','created_at', 'updated_at')
         }),
     )
 
@@ -26,7 +28,7 @@ class PostAdmin(admin.ModelAdmin):
     add_fieldsets = (
         (None, {
             'classes': ('wide',),
-            'fields': ('title', 'slug', 'content', 'status', 'published_at', 'author')
+            'fields': ('title', 'slug', 'content', 'status', 'published_at','tags', 'author')
         }),
     )
 
