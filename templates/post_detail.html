@@ -17,6 +17,18 @@
     <p class="fs-6">{{ post.content|linebreaks }}</p>
   </div>
 
+  <h3>Similar Posts</h3>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+    {% for similar_post in similar_posts %}
+      <div class="col">
+        {% include 'partials/_post_item.html' with post=similar_post %}
+      </div>
+    {% empty %}
+      <p class="text-muted">No similar posts available.</p>
+    {% endfor %}
+  </div>
+
   <div class="my-4 d-flex justify-content-between align-items-center">
     <h2>{{ comments.count }} comment{{ comments.count|pluralize }}</h2>
     <a href="{{ post.get_share_url }}" class="btn btn-outline-primary">Share this post</a>

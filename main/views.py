@@ -1,10 +1,11 @@
 from django.core.mail import send_mail
+from django.db.models.aggregates import Count
 from django.shortcuts import redirect, render
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.decorators.http import require_POST
 from taggit.models import Tag
 from main.forms import SharePostForm,CommentForm
-from .models import Post,Comment
+from .models import Post
 
 def feed(request,tag_slug=None):
     all_posts = Post.published.all()
@@ -36,7 +37,12 @@ def post_detail(request, year, month, slug):
 
     comments = post.comments.all()
     form = CommentForm()
-    return render(request, 'post_detail.html', {'post': post, 'comments': comments, 'form': form})
+
+    post_tags_ids = post.tags.values_list('id', flat=True)
+    similar_posts = Post.published.filter(tags__in=post_tags_ids).exclude(id=post.id)
+    similar_posts = similar_posts.annotate(same_tags=Count('tags')).order_by('-same_tags', '-published_at')[:4]
+
+    return render(request, 'post_detail.html', {'post': post, 'comments': comments, 'form': form, 'similar_posts': similar_posts})
 
 
 @require_POST
