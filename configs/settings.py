@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# Site Map
+SITE_ID = 1
 
 # Application definition
 
@@ -37,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # Site Maps
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
     # third-party apps
     'taggit',
     # local apps
@@ -137,3 +142,5 @@ EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = False
 EMAIL_USE_SSL = False
 DEFAULT_FROM_EMAIL = 'noreply@localhost.com'
+
+
