@@ -15,15 +15,17 @@
             <a class="nav-link {% if request.resolver_match.url_name == 'main:explore' %}active{% endif %}" href="{% url 'main:explore' %}">Explore</a>
           </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Profile</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Settings</a>
-
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Sign out</a>
-            </div>
-          </li>
+          {% if user.is_authenticated %}
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Profile</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="{% url 'main:profile' %}">Profile</a>
+                <a class="dropdown-item" href="#">Settings</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Sign out</a>
+              </div>
+            </li>
+          {% endif %}
         </ul>
         <form class="d-flex">
           <input class="form-control me-sm-2" type="search" placeholder="Search" />

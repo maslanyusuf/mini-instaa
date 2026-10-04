@@ -3,7 +3,7 @@
 {% block content %}
   <h1 class="display-4 fw-bold">{{ post.title }}</h1>
   <p class="lead fs-6">By {{ post.author.username }} on {{ post.created_at|date:'F j, Y' }}</p>
-  <div class="container my-4 px-4 py-2 bg-light rounded">
+  <div class="container my-4 px-4 py-2 rounded">
     <p class="fs-6">{{ post.content|linebreaks }}</p>
   </div>
 
@@ -13,7 +13,13 @@
     <h2>{{ comments.count }} comment{{ comments.count|pluralize }}</h2>
   </div>
 
-  {% include 'includes/comment-form.html' %}
+  {% if user.is_authenticated %}
+    {% include 'includes/comment-form.html' %}
+  {% else %}
+    <p class="text-muted">
+      Please <a href="{% url 'main:login' %}">log in</a> to add a comment.
+    </p>
+  {% endif %}
 
   <ul class="my-4 list-unstyled">
     {% if comments %}

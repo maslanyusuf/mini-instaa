@@ -42,6 +42,7 @@ def add_comment(request, post_id):
     if form.is_valid():
         comment = form.save(commit=False)
         comment.post = post
+        comment.author = request.user
         comment.save()
         return redirect(post.get_absolute_url())
 
