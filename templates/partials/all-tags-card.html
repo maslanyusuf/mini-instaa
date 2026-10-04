@@ -1,0 +1,15 @@
+<div class="card mb-3">
+  <div class="card-header">Tags</div>
+  <div class="card-body">
+    {% for tag in all_tags %}
+      <a href="{% url 'main:tagged_posts' tag.slug %}" class="badge bg-secondary text-decoration-none me-1 mb-1">
+        {{ tag.name }}
+        {% if tag.post_count %}
+          <span class="ms-1">({{ tag.post_count }})</span>
+        {% endif %}
+      </a>
+    {% empty %}
+      <p class="text-muted mb-0">No tags yet.</p>
+    {% endfor %}
+  </div>
+</div>
