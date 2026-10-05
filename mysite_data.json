@@ -1,0 +1,980 @@
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2026-10-03T12:26:48.865Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "The future of marketing isn't humans vs. AI — it's humans with AI",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2026-10-03T12:27:12.467Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "The future of marketing isn't humans vs. AI — it's humans with AI",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2026-10-03T12:28:50.923Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "What is a customer journey map? The complete overview [examples + templates]",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2026-10-03T12:46:50.975Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "The future of marketing isn't humans vs. AI — it's humans with AI",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2026-10-03T12:46:56.702Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "What is a customer journey map? The complete overview [examples + templates]",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2026-10-04T06:26:36.426Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "jazz",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2026-10-04T06:28:10.511Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "jazz",
+      "action_flag": 2,
+      "change_message": "[{\"deleted\": {\"name\": \"tagged item\", \"object\": \"The future of marketing isn't humans vs. AI \\u2014 it's humans with AI tagged with jazz\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2026-10-04T06:28:17.036Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "3",
+      "object_repr": "django",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2026-10-04T06:28:24.722Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "music",
+      "action_flag": 2,
+      "change_message": "[{\"deleted\": {\"name\": \"tagged item\", \"object\": \"The future of marketing isn't humans vs. AI \\u2014 it's humans with AI tagged with music\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2026-10-04T06:28:34.440Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "3",
+      "object_repr": "django",
+      "action_flag": 2,
+      "change_message": "[{\"added\": {\"name\": \"tagged item\", \"object\": \"The future of marketing isn't humans vs. AI \\u2014 it's humans with AI tagged with django\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2026-10-04T06:28:44.040Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "jazz",
+      "action_flag": 2,
+      "change_message": "[{\"added\": {\"name\": \"tagged item\", \"object\": \"The future of marketing isn't humans vs. AI \\u2014 it's humans with AI tagged with jazz\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2026-10-04T06:34:08.544Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "The future of marketing isn't humans vs. AI — it's humans with AI",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2026-10-04T07:17:12.990Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "What is a customer journey map? The complete overview [examples + templates]",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2026-10-04T08:34:07.349Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "Django Email Guide: Localhost to Production",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2026-10-04T08:35:31.966Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "4",
+      "object_repr": "This is a post formatted with markdown",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2026-10-04T08:51:16.785Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "localhost:8000",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Domain name\", \"Display name\"]}}]"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 4,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 5,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 6,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add post",
+      "content_type": 7,
+      "codename": "add_post"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change post",
+      "content_type": 7,
+      "codename": "change_post"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete post",
+      "content_type": 7,
+      "codename": "delete_post"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view post",
+      "content_type": 7,
+      "codename": "view_post"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add comment",
+      "content_type": 8,
+      "codename": "add_comment"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change comment",
+      "content_type": 8,
+      "codename": "change_comment"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete comment",
+      "content_type": 8,
+      "codename": "delete_comment"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view comment",
+      "content_type": 8,
+      "codename": "view_comment"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add tag",
+      "content_type": 9,
+      "codename": "add_tag"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change tag",
+      "content_type": 9,
+      "codename": "change_tag"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete tag",
+      "content_type": 9,
+      "codename": "delete_tag"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view tag",
+      "content_type": 9,
+      "codename": "view_tag"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add tagged item",
+      "content_type": 10,
+      "codename": "add_taggeditem"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change tagged item",
+      "content_type": 10,
+      "codename": "change_taggeditem"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete tagged item",
+      "content_type": 10,
+      "codename": "delete_taggeditem"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can view tagged item",
+      "content_type": 10,
+      "codename": "view_taggeditem"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+      "name": "Can add site",
+      "content_type": 11,
+      "codename": "add_site"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+      "name": "Can change site",
+      "content_type": 11,
+      "codename": "change_site"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+      "name": "Can delete site",
+      "content_type": 11,
+      "codename": "delete_site"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+      "name": "Can view site",
+      "content_type": 11,
+      "codename": "view_site"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$PSFNsM2q1YeKUJkYhrIkdR$q2cJ1zZ5SpDXhmE96PcWCN0VCy1FLuwSZMnc5veYKGA=",
+      "last_login": "2026-10-03T12:20:46.032Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "admin@mail.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2026-10-03T12:18:44.658Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "main",
+      "model": "post"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "main",
+      "model": "comment"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "taggit",
+      "model": "tag"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+      "app_label": "taggit",
+      "model": "taggeditem"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+      "app_label": "sites",
+      "model": "site"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "4tgkjeh9pc6os1iyldmw50i30vtf4evx",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2hCYFsa6dN8zkOkwSNVAUtqV8e7apAvd_vfef6lA25rD1mQJc1QXZdXpd5uIH1J2EO9UblVzLesyT3pX9EGbHmuU5_Vw_w4ytfytQUxnTS8emRgTe0xg0DkaIGLXd_4cnSAnaxBtYvIMbAB7GAYWME69P9DEN0A:1xCyjO:CitRii_N3Yyqua2lZ_skzalZCLGcdaXent8rDOxNpCE",
+      "expire_date": "2026-10-17T12:20:46.033Z"
+    }
+  },
+  {
+    "model": "sites.site",
+    "pk": 1,
+    "fields": {
+      "domain": "localhost:8000",
+      "name": "localhost:8000"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 1,
+    "fields": {
+      "name": "music",
+      "slug": "music"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 2,
+    "fields": {
+      "name": "jazz",
+      "slug": "jazz"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 3,
+    "fields": {
+      "name": "django",
+      "slug": "django"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 4,
+    "fields": {
+      "name": "Django",
+      "slug": "django_1"
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 4,
+    "fields": {
+      "tag": 3,
+      "content_type": 7,
+      "object_id": 1
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 5,
+    "fields": {
+      "tag": 2,
+      "content_type": 7,
+      "object_id": 1
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 6,
+    "fields": {
+      "tag": 1,
+      "content_type": 7,
+      "object_id": 1
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 7,
+    "fields": {
+      "tag": 3,
+      "content_type": 7,
+      "object_id": 2
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 8,
+    "fields": {
+      "tag": 4,
+      "content_type": 7,
+      "object_id": 3
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 9,
+    "fields": {
+      "tag": 4,
+      "content_type": 7,
+      "object_id": 4
+    }
+  },
+  {
+    "model": "main.post",
+    "pk": 1,
+    "fields": {
+      "title": "The future of marketing isn't humans vs. AI — it's humans with AI",
+      "slug": "the-future-of-marketing-isnt-humans-vs-ai-its-huma",
+      "content": "The conversation around AI in marketing has been dominated by fear. Will AI replace marketers? Will content lose its soul? Will algorithms decide everything we create? After spending two years integrating AI into our marketing operations at Content Hub, I can tell you the answer is a resounding no.\r\n\r\nBut here's the thing — the real story is far more interesting than a simple binary. The future of marketing isn't about choosing between human creativity and machine efficiency. It's about combining them in ways that neither could achieve alone.\r\n\r\nThe Loop Playbook\r\nWe call our framework 'The Loop' because it's designed to be cyclical. AI generates ideas and drafts. Humans refine, add nuance, and inject brand voice. AI then optimizes distribution and measures performance. Humans interpret the data and set new creative direction. Round and round we go, each cycle producing better results than the last.\r\n\r\nWhen we first implemented The Loop, our content output increased by 3x. But more importantly, our engagement metrics improved across the board. Average time on page went up 23%. Social shares increased by 47%. And our lead generation from content marketing grew by 61%.",
+      "status": "published",
+      "published_at": "2026-10-03T12:26:27Z",
+      "created_at": "2026-10-03T12:26:48.863Z",
+      "updated_at": "2026-10-04T06:34:08.537Z",
+      "author": 1
+    }
+  },
+  {
+    "model": "main.post",
+    "pk": 2,
+    "fields": {
+      "title": "What is a customer journey map? The complete overview [examples + templates]",
+      "slug": "what-is-a-customer-journey-map-the-complete-overvi",
+      "content": "A customer journey map is a visual representation of every interaction a customer has with your brand, from their first moment of awareness to long-term loyalty. It's one of the most powerful tools in a marketer's arsenal — yet it's often misunderstood or underutilized.\r\n\r\nWhen done right, journey mapping reveals the gaps between the experience you think you're delivering and the one your customers actually have. That insight is gold.\r\n\r\nWhy Journey Mapping Matters\r\nCompanies that actively manage customer journeys see a 54% greater return on marketing investment. That's because journey maps force you to think from the customer's perspective — not your organizational structure.\r\n\r\nMost companies are organized by department: marketing, sales, support, product. But customers don't experience your brand through departmental lenses. They experience a continuous journey, and any friction point along the way can derail the entire relationship.",
+      "status": "published",
+      "published_at": "2026-10-03T12:28:36Z",
+      "created_at": "2026-10-03T12:28:50.921Z",
+      "updated_at": "2026-10-04T07:17:12.981Z",
+      "author": 1
+    }
+  },
+  {
+    "model": "main.post",
+    "pk": 3,
+    "fields": {
+      "title": "Django Email Guide: Localhost to Production",
+      "slug": "django-email-guide-localhost-to-production",
+      "content": "# Django Email Guide: Localhost to Production\r\n\r\nA complete guide to sending, testing, and deploying emails in Django.\r\n\r\n## Table of Contents\r\n\r\n1. [How Django Email Works](#1-how-django-email-works)\r\n2. [Localhost Setup](#2-localhost-setup)\r\n3. [Sending Emails (Code Examples)](#3-sending-emails-code-examples)\r\n4. [Testing Emails](#4-testing-emails)\r\n5. [Environment-Based Settings](#5-environment-based-settings)\r\n6. [Production Setup](#6-production-setup)\r\n7. [Email Providers Cheat Sheet](#7-email-providers-cheat-sheet)\r\n8. [Deliverability: SPF, DKIM, DMARC](#8-deliverability-spf-dkim-dmarc)\r\n9. [Background Sending with Celery](#9-background-sending-with-celery)\r\n10. [Error Emails to Admins](#10-error-emails-to-admins)\r\n11. [Troubleshooting](#11-troubleshooting)\r\n12. [Production Checklist](#12-production-checklist)\r\n\r\n---\r\n\r\n## 1. How Django Email Works\r\n\r\nDjango sends mail through an **email backend**, selected by the `EMAIL_BACKEND` setting. Your code stays the same (`send_mail(...)`); only the backend changes between environments.\r\n\r\n| Backend                  | Use for                           | What it does                                                             |\r\n| ------------------------ | --------------------------------- | ------------------------------------------------------------------------ |\r\n| `console.EmailBackend`   | Local dev                         | Prints the email to your terminal                                        |\r\n| `filebased.EmailBackend` | Local dev                         | Saves each email as a `.log` file                                        |\r\n| `smtp.EmailBackend`      | Local debug server and production | Sends through an SMTP server                                             |\r\n| `locmem.EmailBackend`    | Tests                             | Stores emails in `mail.outbox` (Django sets this automatically in tests) |\r\n| `dummy.EmailBackend`     | Disabling email                   | Does nothing                                                             |\r\n| Anymail backends         | Production                        | Sends through provider HTTP APIs (SendGrid, Mailgun, SES, ...)           |\r\n\r\nAll backends live under `django.core.mail.backends.`.\r\n\r\n---\r\n\r\n## 2. Localhost Setup\r\n\r\n### Option A: Console backend (simplest)\r\n\r\nEmails print in the terminal where `runserver` is running. No server needed.\r\n\r\n```python\r\n# settings.py\r\nEMAIL_BACKEND = \"django.core.mail.backends.console.EmailBackend\"\r\nDEFAULT_FROM_EMAIL = \"noreply@localhost.com\"\r\n```\r\n\r\n### Option B: File backend\r\n\r\nSaves every email to a file so you can inspect it later.\r\n\r\n```python\r\n# settings.py\r\nEMAIL_BACKEND = \"django.core.mail.backends.filebased.EmailBackend\"\r\nEMAIL_FILE_PATH = BASE_DIR / \"sent_emails\"  # folder is created automatically\r\nDEFAULT_FROM_EMAIL = \"noreply@localhost.com\"\r\n```\r\n\r\nAdd `sent_emails/` to `.gitignore`.\r\n\r\n### Option C: Local SMTP debug server\r\n\r\nBehaves like a real SMTP server, so you test the same code path as production.\r\n\r\n```python\r\n# settings.py\r\nEMAIL_BACKEND = \"django.core.mail.backends.smtp.EmailBackend\"\r\nEMAIL_HOST = \"localhost\"\r\nEMAIL_PORT = 1025\r\nEMAIL_HOST_USER = \"\"\r\nEMAIL_HOST_PASSWORD = \"\"\r\nEMAIL_USE_TLS = False\r\nEMAIL_USE_SSL = False\r\nDEFAULT_FROM_EMAIL = \"noreply@localhost.com\"\r\n```\r\n\r\nStart the debug server in a **separate terminal**:\r\n\r\n```bash\r\n# Python 3.11 and older\r\npython -m smtpd -n -c DebuggingServer localhost:1025\r\n\r\n# Python 3.12+ (smtpd was removed from the standard library)\r\npip install aiosmtpd\r\npython -m aiosmtpd -n -l localhost:1025\r\n```\r\n\r\n> The port in `settings.py` must match the port the server listens on. If you get `ConnectionRefusedError`, nothing is listening on that port.\r\n\r\n### Option D: Mailpit (recommended: a real inbox UI)\r\n\r\n[Mailpit](https://mailpit.axllent.org) catches all SMTP mail and shows it in a web inbox, including HTML rendering, attachments, and headers.\r\n\r\n```bash\r\ndocker run -d --name mailpit -p 8025:8025 -p 1025:1025 axllent/mailpit\r\n```\r\n\r\n- SMTP: `localhost:1025` (use the same settings as Option C)\r\n- Web UI: http://localhost:8025\r\n\r\nMailHog and Mailtrap work the same way. Mailtrap is hosted and gives you an SMTP host, user, and password to paste into settings.\r\n\r\n---\r\n\r\n## 3. Sending Emails (Code Examples)\r\n\r\n### 3.1 Quick test from the shell\r\n\r\n```bash\r\npython manage.py shell\r\n```\r\n\r\n```python\r\nfrom django.core.mail import send_mail\r\n\r\nsend_mail(\r\n    subject=\"Test Email from Django\",\r\n    message=\"Hello! This is a test email.\",\r\n    from_email=None,  # falls back to DEFAULT_FROM_EMAIL\r\n    recipient_list=[\"test@example.com\"],\r\n    fail_silently=False,\r\n)\r\n```\r\n\r\n`send_mail` returns the number of emails sent (`1` on success).\r\n\r\n### 3.2 HTML email with a plain-text fallback\r\n\r\n```python\r\nfrom django.core.mail import EmailMultiAlternatives\r\n\r\nmsg = EmailMultiAlternatives(\r\n    subject=\"Welcome!\",\r\n    body=\"Welcome to our site.\",  # plain-text version\r\n    from_email=\"noreply@localhost.com\",\r\n    to=[\"test@example.com\"],\r\n    cc=[\"cc@example.com\"],\r\n    reply_to=[\"support@example.com\"],\r\n)\r\nmsg.attach_alternative(\"<h1>Welcome!</h1><p>Thanks for signing up.</p>\", \"text/html\")\r\nmsg.send()\r\n```\r\n\r\n### 3.3 Using Django templates (best practice)\r\n\r\n```\r\ntemplates/\r\n└── emails/\r\n    ├── welcome.html\r\n    └── welcome.txt\r\n```\r\n\r\n```html\r\n<!-- templates/emails/welcome.html -->\r\n<h1>Hi {{ user.first_name }}!</h1>\r\n<p>Welcome to {{ site_name }}.</p>\r\n<a href=\"{{ login_url }}\">Log in</a>\r\n```\r\n\r\n```text\r\n{# templates/emails/welcome.txt #}\r\nHi {{ user.first_name }}!\r\nWelcome to {{ site_name }}.\r\nLog in: {{ login_url }}\r\n```\r\n\r\n```python\r\n# emails.py\r\nfrom django.core.mail import EmailMultiAlternatives\r\nfrom django.template.loader import render_to_string\r\nfrom django.conf import settings\r\n\r\n\r\ndef send_welcome_email(user):\r\n    context = {\r\n        \"user\": user,\r\n        \"site_name\": \"MySite\",\r\n        \"login_url\": f\"{settings.SITE_URL}/login/\",\r\n    }\r\n    text_body = render_to_string(\"emails/welcome.txt\", context)\r\n    html_body = render_to_string(\"emails/welcome.html\", context)\r\n\r\n    msg = EmailMultiAlternatives(\r\n        subject=\"Welcome to MySite\",\r\n        body=text_body,\r\n        from_email=settings.DEFAULT_FROM_EMAIL,\r\n        to=[user.email],\r\n    )\r\n    msg.attach_alternative(html_body, \"text/html\")\r\n    msg.send()\r\n```\r\n\r\nAdd `SITE_URL = \"http://127.0.0.1:8000\"` locally and your real domain in production.\r\n\r\n### 3.4 Attachments\r\n\r\n```python\r\nfrom pathlib import Path\r\nfrom django.conf import settings\r\n\r\nmsg.attach_file(Path(settings.BASE_DIR) / \"media\" / \"invoice.pdf\")\r\n\r\n# Or attach in-memory content\r\nmsg.attach(\"report.csv\", csv_string, \"text/csv\")\r\n```\r\n\r\n### 3.5 Sending from a view\r\n\r\n```python\r\n# views.py\r\nfrom django.core.mail import send_mail\r\nfrom django.conf import settings\r\nfrom django.http import HttpResponse\r\n\r\n\r\ndef send_test_email(request):\r\n    send_mail(\r\n        subject=\"Django Test\",\r\n        message=\"It works!\",\r\n        from_email=settings.DEFAULT_FROM_EMAIL,\r\n        recipient_list=[\"test@example.com\"],\r\n        fail_silently=False,\r\n    )\r\n    return HttpResponse(\"Email sent! Check your terminal or inbox.\")\r\n```\r\n\r\n```python\r\n# urls.py\r\nfrom django.urls import path\r\nfrom .views import send_test_email\r\n\r\nurlpatterns = [\r\n    path(\"send-email/\", send_test_email),\r\n]\r\n```\r\n\r\nVisit http://127.0.0.1:8000/send-email/.\r\n\r\n### 3.6 Sending many emails over one connection\r\n\r\n```python\r\nfrom django.core import mail\r\n\r\nconnection = mail.get_connection()\r\nconnection.open()\r\n\r\nmessages = [\r\n    mail.EmailMessage(f\"Hello {n}\", \"Body\", \"noreply@example.com\", [addr])\r\n    for n, addr in enumerate([\"a@example.com\", \"b@example.com\"])\r\n]\r\nconnection.send_messages(messages)\r\nconnection.close()\r\n```\r\n\r\n`send_mass_mail()` also exists, but `get_connection()` with `EmailMessage` objects is more flexible.\r\n\r\n### 3.7 Built-in emails: password reset\r\n\r\nDjango's auth views already send mail. Make sure your email settings work and these are configured:\r\n\r\n```python\r\n# urls.py\r\nfrom django.urls import path, include\r\n\r\nurlpatterns = [\r\n    path(\"accounts/\", include(\"django.contrib.auth.urls\")),\r\n]\r\n```\r\n\r\nLocally, the reset link appears in your console or Mailpit inbox.\r\n\r\n---\r\n\r\n## 4. Testing Emails\r\n\r\nDuring `manage.py test`, Django automatically swaps in the in-memory backend, so no real mail is sent.\r\n\r\n```python\r\nfrom django.test import TestCase\r\nfrom django.core import mail\r\n\r\n\r\nclass EmailTest(TestCase):\r\n    def test_send_email(self):\r\n        mail.send_mail(\r\n            \"Subject here\",\r\n            \"Here is the message.\",\r\n            \"from@example.com\",\r\n            [\"to@example.com\"],\r\n        )\r\n        self.assertEqual(len(mail.outbox), 1)\r\n        self.assertEqual(mail.outbox[0].subject, \"Subject here\")\r\n        self.assertEqual(mail.outbox[0].to, [\"to@example.com\"])\r\n```\r\n\r\nTest an email triggered by a view:\r\n\r\n```python\r\ndef test_signup_sends_welcome_email(self):\r\n    response = self.client.post(\"/signup/\", {\"email\": \"new@example.com\", \"password\": \"pass12345\"})\r\n    self.assertEqual(response.status_code, 302)\r\n    self.assertEqual(len(mail.outbox), 1)\r\n    self.assertIn(\"Welcome\", mail.outbox[0].subject)\r\n```\r\n\r\nRun:\r\n\r\n```bash\r\npython manage.py test\r\n```\r\n\r\n---\r\n\r\n## 5. Environment-Based Settings\r\n\r\nNever hardcode credentials. Read them from environment variables.\r\n\r\n```bash\r\npip install python-dotenv\r\n```\r\n\r\n```env\r\n# .env (local development) - add to .gitignore!\r\nDEBUG=True\r\nEMAIL_BACKEND=django.core.mail.backends.console.EmailBackend\r\nDEFAULT_FROM_EMAIL=noreply@localhost.com\r\nSITE_URL=http://127.0.0.1:8000\r\n```\r\n\r\n```env\r\n# .env (production, or set these in your host's dashboard)\r\nDEBUG=False\r\nEMAIL_BACKEND=django.core.mail.backends.smtp.EmailBackend\r\nEMAIL_HOST=smtp.yourprovider.com\r\nEMAIL_PORT=587\r\nEMAIL_HOST_USER=your-username\r\nEMAIL_HOST_PASSWORD=your-secret-password\r\nEMAIL_USE_TLS=True\r\nEMAIL_USE_SSL=False\r\nDEFAULT_FROM_EMAIL=MySite <noreply@yourdomain.com>\r\nSITE_URL=https://yourdomain.com\r\n```\r\n\r\n```python\r\n# settings.py\r\nimport os\r\nfrom dotenv import load_dotenv\r\n\r\nload_dotenv()\r\n\r\nEMAIL_BACKEND = os.getenv(\r\n    \"EMAIL_BACKEND\", \"django.core.mail.backends.console.EmailBackend\"\r\n)\r\nEMAIL_HOST = os.getenv(\"EMAIL_HOST\", \"localhost\")\r\nEMAIL_PORT = int(os.getenv(\"EMAIL_PORT\", 1025))\r\nEMAIL_HOST_USER = os.getenv(\"EMAIL_HOST_USER\", \"\")\r\nEMAIL_HOST_PASSWORD = os.getenv(\"EMAIL_HOST_PASSWORD\", \"\")\r\nEMAIL_USE_TLS = os.getenv(\"EMAIL_USE_TLS\", \"False\") == \"True\"\r\nEMAIL_USE_SSL = os.getenv(\"EMAIL_USE_SSL\", \"False\") == \"True\"\r\nEMAIL_TIMEOUT = 10  # seconds; prevents requests hanging on a dead server\r\nDEFAULT_FROM_EMAIL = os.getenv(\"DEFAULT_FROM_EMAIL\", \"noreply@localhost.com\")\r\nSERVER_EMAIL = os.getenv(\"SERVER_EMAIL\", DEFAULT_FROM_EMAIL)  # sender for error emails\r\nSITE_URL = os.getenv(\"SITE_URL\", \"http://127.0.0.1:8000\")\r\n```\r\n\r\nDefaulting to the console backend means a missing variable never accidentally sends real mail from a dev machine.\r\n\r\n---\r\n\r\n## 6. Production Setup\r\n\r\n### 6.1 Choose a transport: SMTP or API\r\n\r\n**SMTP**: works with any provider, no extra packages. Good starting point.\r\n\r\n**API via [django-anymail](https://anymail.dev)**: uses the provider's HTTP API. Gives you delivery status, webhooks (bounces, opens, clicks), message IDs, and templates. Better for serious production use.\r\n\r\n### 6.2 SMTP in production\r\n\r\n```python\r\nEMAIL_BACKEND = \"django.core.mail.backends.smtp.EmailBackend\"\r\nEMAIL_HOST = \"smtp.yourprovider.com\"\r\nEMAIL_PORT = 587\r\nEMAIL_HOST_USER = \"your-username\"\r\nEMAIL_HOST_PASSWORD = \"your-secret\"  # load from env!\r\nEMAIL_USE_TLS = True\r\nEMAIL_USE_SSL = False\r\nEMAIL_TIMEOUT = 10\r\nDEFAULT_FROM_EMAIL = \"MySite <noreply@yourdomain.com>\"\r\n```\r\n\r\n**TLS vs SSL**\r\n\r\n| Port | Setting                | Notes                          |\r\n| ---- | ---------------------- | ------------------------------ |\r\n| 587  | `EMAIL_USE_TLS = True` | STARTTLS. The modern default.  |\r\n| 465  | `EMAIL_USE_SSL = True` | Implicit TLS.                  |\r\n| 25   | none                   | Often blocked by hosts; avoid. |\r\n\r\n`EMAIL_USE_TLS` and `EMAIL_USE_SSL` are **mutually exclusive**. Setting both raises an error.\r\n\r\n### 6.3 API backend with django-anymail (SendGrid example)\r\n\r\n```bash\r\npip install \"django-anymail[sendgrid]\"\r\n```\r\n\r\n```python\r\n# settings.py\r\nINSTALLED_APPS = [\r\n    # ...\r\n    \"anymail\",\r\n]\r\n\r\nEMAIL_BACKEND = \"anymail.backends.sendgrid.EmailBackend\"\r\nANYMAIL = {\r\n    \"SENDGRID_API_KEY\": os.getenv(\"SENDGRID_API_KEY\"),\r\n}\r\nDEFAULT_FROM_EMAIL = \"MySite <noreply@yourdomain.com>\"\r\nSERVER_EMAIL = \"server@yourdomain.com\"\r\n```\r\n\r\nYour `send_mail` and `EmailMultiAlternatives` code does not change. Other backends: `anymail.backends.mailgun.EmailBackend`, `amazon_ses`, `postmark`, `brevo`, `resend`, and more. See the Anymail docs for each provider's extras and setting names.\r\n\r\nReading delivery info after sending:\r\n\r\n```python\r\nmsg.send()\r\nprint(msg.anymail_status.message_id)\r\nprint(msg.anymail_status.status)  # {'queued'} / {'sent'} / ...\r\n```\r\n\r\n### 6.4 Gmail SMTP (small projects only)\r\n\r\nGmail is fine for a hobby project but limited (roughly 500 recipients/day) and can block sign-ins.\r\n\r\n1. Enable **2-Step Verification** on the Google account.\r\n2. Create an **App Password** (Google Account → Security → App passwords).\r\n3. Use that 16-character password, not your normal one.\r\n\r\n```python\r\nEMAIL_HOST = \"smtp.gmail.com\"\r\nEMAIL_PORT = 587\r\nEMAIL_USE_TLS = True\r\nEMAIL_HOST_USER = \"you@gmail.com\"\r\nEMAIL_HOST_PASSWORD = \"your-app-password\"\r\nDEFAULT_FROM_EMAIL = \"you@gmail.com\"  # Gmail rewrites other From addresses\r\n```\r\n\r\nUse a dedicated transactional provider for anything with real users.\r\n\r\n### 6.5 Hosting notes\r\n\r\n- Many cloud hosts (DigitalOcean, AWS EC2, GCP, some PaaS plans) **block outbound port 25**. Use 587 or 465, or an API backend.\r\n- Set secrets as environment variables in your host's dashboard (Render, Railway, Heroku, Fly.io, etc.), not in the repo.\r\n- Use a real domain you control for `DEFAULT_FROM_EMAIL`. Sending from `@gmail.com` or `@localhost` through a third-party provider gets rejected or spam-foldered.\r\n\r\n---\r\n\r\n## 7. Email Providers Cheat Sheet\r\n\r\nVerify details in each provider's dashboard, since hosts and policies change.\r\n\r\n| Provider           | SMTP host                           | Port | Username                     | Password      |\r\n| ------------------ | ----------------------------------- | ---- | ---------------------------- | ------------- |\r\n| SendGrid           | `smtp.sendgrid.net`                 | 587  | literal `apikey`             | your API key  |\r\n| Mailgun            | `smtp.mailgun.org`                  | 587  | SMTP login from dashboard    | SMTP password |\r\n| Amazon SES         | `email-smtp.<region>.amazonaws.com` | 587  | SMTP username (not IAM user) | SMTP password |\r\n| Postmark           | `smtp.postmarkapp.com`              | 587  | Server API token             | same token    |\r\n| Brevo (Sendinblue) | `smtp-relay.brevo.com`              | 587  | account login                | SMTP key      |\r\n| Gmail              | `smtp.gmail.com`                    | 587  | full address                 | App Password  |\r\n\r\n**Free tiers and sandboxes:** Amazon SES starts in sandbox mode (you can only send to verified addresses until you request production access). Most providers require verifying your sender domain or address before sending.\r\n\r\n---\r\n\r\n## 8. Deliverability: SPF, DKIM, DMARC\r\n\r\nWithout these DNS records, your production email will likely land in spam or be rejected.\r\n\r\n| Record    | Purpose                                                    | Typical form                                                                        |\r\n| --------- | ---------------------------------------------------------- | ----------------------------------------------------------------------------------- |\r\n| **SPF**   | Lists servers allowed to send for your domain              | TXT: `v=spf1 include:sendgrid.net ~all`                                             |\r\n| **DKIM**  | Cryptographic signature proving the message wasn't altered | CNAME/TXT records the provider gives you                                            |\r\n| **DMARC** | Policy for what to do when SPF/DKIM fail, plus reporting   | TXT at `_dmarc.yourdomain.com`: `v=DMARC1; p=none; rua=mailto:dmarc@yourdomain.com` |\r\n\r\nSteps:\r\n\r\n1. Add your domain in the provider dashboard.\r\n2. Copy the DNS records they give you into your DNS host.\r\n3. Wait for verification (minutes to hours).\r\n4. Start DMARC at `p=none`, review reports, then tighten to `quarantine` or `reject`.\r\n5. Test with [mail-tester.com](https://www.mail-tester.com) or Google Postmaster Tools.\r\n\r\nGood practices:\r\n\r\n- Always include a plain-text alternative alongside HTML.\r\n- Use a consistent, recognizable From name and address.\r\n- Add an unsubscribe link for marketing mail.\r\n- Separate transactional mail (password resets) from bulk/marketing mail, ideally on different sender domains or streams.\r\n\r\n---\r\n\r\n## 9. Background Sending with Celery\r\n\r\nSending email inside a request blocks the response and fails if the mail server is slow. Move it to a background task in production.\r\n\r\n```bash\r\npip install celery redis\r\n```\r\n\r\n```python\r\n# myproject/celery.py\r\nimport os\r\nfrom celery import Celery\r\n\r\nos.environ.setdefault(\"DJANGO_SETTINGS_MODULE\", \"myproject.settings\")\r\napp = Celery(\"myproject\")\r\napp.config_from_object(\"django.conf:settings\", namespace=\"CELERY\")\r\napp.autodiscover_tasks()\r\n```\r\n\r\n```python\r\n# myproject/__init__.py\r\nfrom .celery import app as celery_app\r\n\r\n__all__ = (\"celery_app\",)\r\n```\r\n\r\n```python\r\n# settings.py\r\nCELERY_BROKER_URL = os.getenv(\"CELERY_BROKER_URL\", \"redis://localhost:6379/0\")\r\n```\r\n\r\n```python\r\n# accounts/tasks.py\r\nfrom celery import shared_task\r\nfrom django.contrib.auth import get_user_model\r\nfrom .emails import send_welcome_email\r\n\r\n\r\n@shared_task(bind=True, autoretry_for=(Exception,), retry_backoff=True, max_retries=5)\r\ndef send_welcome_email_task(self, user_id):\r\n    user = get_user_model().objects.get(pk=user_id)\r\n    send_welcome_email(user)\r\n```\r\n\r\n```python\r\n# views.py\r\nfrom django.db import transaction\r\nfrom .tasks import send_welcome_email_task\r\n\r\n\r\ndef signup(request):\r\n    # ... create user ...\r\n    transaction.on_commit(lambda: send_welcome_email_task.delay(user.id))\r\n```\r\n\r\nNotes:\r\n\r\n- Pass **IDs**, not model instances, to tasks.\r\n- `transaction.on_commit` ensures the task doesn't run before the user row exists.\r\n- Run the worker: `celery -A myproject worker -l info`.\r\n- Lighter alternatives: `django-q2`, `huey`, or Django 6.0's built-in tasks framework if you're on it.\r\n\r\n---\r\n\r\n## 10. Error Emails to Admins\r\n\r\nWith `DEBUG=False`, Django can email you tracebacks for unhandled 500 errors.\r\n\r\n```python\r\nADMINS = [(\"Your Name\", \"you@yourdomain.com\")]\r\nMANAGERS = ADMINS\r\nSERVER_EMAIL = \"server@yourdomain.com\"  # From address for these emails\r\nEMAIL_SUBJECT_PREFIX = \"[MySite] \"\r\n```\r\n\r\nTest it:\r\n\r\n```bash\r\npython manage.py sendtestemail --admins\r\npython manage.py sendtestemail someone@example.com\r\n```\r\n\r\n`sendtestemail` is a handy built-in command for verifying your production config without writing code.\r\n\r\nConsider Sentry for error tracking at scale, since admin emails get noisy.\r\n\r\n---\r\n\r\n## 11. Troubleshooting\r\n\r\n| Symptom                                                   | Likely cause and fix                                                                        |\r\n| --------------------------------------------------------- | ------------------------------------------------------------------------------------------- |\r\n| `ConnectionRefusedError: [Errno 111]`                     | Nothing is listening on `EMAIL_HOST:EMAIL_PORT`. Start the debug server or fix the port.    |\r\n| `smtplib.SMTPServerDisconnected`                          | Wrong TLS/SSL combination for the port. 587 → TLS, 465 → SSL.                               |\r\n| `SMTPAuthenticationError (535)`                           | Wrong credentials. Gmail needs an App Password. SendGrid username must be `apikey`.         |\r\n| `SMTPSenderRefused` / `550`                               | From address or domain isn't verified with the provider.                                    |\r\n| `ssl.SSLError: WRONG_VERSION_NUMBER`                      | You enabled SSL on a STARTTLS port (or vice versa).                                         |\r\n| `TimeoutError` / request hangs                            | Port blocked by your host, or firewall. Try 587/465 or an API backend. Set `EMAIL_TIMEOUT`. |\r\n| Emails go to spam                                         | Missing SPF/DKIM/DMARC, or the From domain doesn't match the authenticated domain.          |\r\n| Emails don't arrive, no error                             | You're still on the console/file backend, or `fail_silently=True` is hiding errors.         |\r\n| `ImproperlyConfigured: ...TLS/SSL are mutually exclusive` | Set only one of `EMAIL_USE_TLS` / `EMAIL_USE_SSL`.                                          |\r\n| Env var booleans always `True`                            | `bool(\"False\")` is `True`. Compare strings: `os.getenv(\"X\") == \"True\"`.                     |\r\n\r\nDebugging tips:\r\n\r\n```python\r\n# See the raw SMTP conversation\r\nimport smtplib\r\nsmtplib.SMTP.debuglevel = 1\r\n```\r\n\r\nOr check where mail is going:\r\n\r\n```python\r\nfrom django.conf import settings\r\nprint(settings.EMAIL_BACKEND, settings.EMAIL_HOST, settings.EMAIL_PORT)\r\n```\r\n\r\n---\r\n\r\n## 12. Production Checklist\r\n\r\n- [ ] `EMAIL_BACKEND` is SMTP or an Anymail backend (not console/file)\r\n- [ ] Credentials come from environment variables, not source control\r\n- [ ] `.env` is in `.gitignore`\r\n- [ ] `DEFAULT_FROM_EMAIL` uses a domain you own\r\n- [ ] Sender domain verified with the provider\r\n- [ ] SPF, DKIM, and DMARC records published\r\n- [ ] `EMAIL_TIMEOUT` set\r\n- [ ] `EMAIL_USE_TLS` **or** `EMAIL_USE_SSL`, never both\r\n- [ ] Emails sent from background tasks, with retries\r\n- [ ] HTML emails include a plain-text alternative\r\n- [ ] `SITE_URL` points to the production domain (links in emails are correct)\r\n- [ ] `ADMINS` and `SERVER_EMAIL` configured for error reports\r\n- [ ] Verified with `python manage.py sendtestemail you@yourdomain.com`\r\n- [ ] Spam score checked (mail-tester.com)\r\n- [ ] Bounce/complaint handling set up (Anymail webhooks or provider dashboard)\r\n- [ ] Provider rate limits and sandbox restrictions understood\r\n\r\n---\r\n\r\n## Quick Reference\r\n\r\n```python\r\n# Simple\r\nsend_mail(subject, message, from_email, [to], fail_silently=False)\r\n\r\n# HTML + text\r\nmsg = EmailMultiAlternatives(subject, text, from_email, [to])\r\nmsg.attach_alternative(html, \"text/html\")\r\nmsg.send()\r\n\r\n# Test\r\nfrom django.core import mail\r\nmail.outbox  # list of sent messages during tests\r\n\r\n# CLI check\r\npython manage.py sendtestemail you@example.com\r\n```",
+      "status": "published",
+      "published_at": "2026-10-04T08:33:38Z",
+      "created_at": "2026-10-04T08:34:07.339Z",
+      "updated_at": "2026-10-04T08:34:07.339Z",
+      "author": 1
+    }
+  },
+  {
+    "model": "main.post",
+    "pk": 4,
+    "fields": {
+      "title": "This is a post formatted with markdown",
+      "slug": "this-is-a-post-formatted-with-markdown",
+      "content": "This is a post formatted with markdown\r\n--------------------------------------\r\n*This is emphasized* and **this is more emphasized**.\r\nHere is a list:\r\n* One\r\n* Two\r\n* Three\r\nAnd a [link to the Django website](https://www.djangoproject.com/).",
+      "status": "published",
+      "published_at": "2026-10-04T08:35:18Z",
+      "created_at": "2026-10-04T08:35:31.958Z",
+      "updated_at": "2026-10-04T08:35:31.958Z",
+      "author": 1
+    }
+  },
+  {
+    "model": "main.comment",
+    "pk": 1,
+    "fields": {
+      "post": 1,
+      "author": 1,
+      "content": "comment",
+      "created_at": "2026-10-03T15:56:12.866Z",
+      "updated_at": "2026-10-03T15:56:12.866Z"
+    }
+  },
+  {
+    "model": "main.comment",
+    "pk": 2,
+    "fields": {
+      "post": 1,
+      "author": 1,
+      "content": "comment",
+      "created_at": "2026-10-03T15:57:33.143Z",
+      "updated_at": "2026-10-03T15:57:33.143Z"
+    }
+  },
+  {
+    "model": "main.comment",
+    "pk": 3,
+    "fields": {
+      "post": 1,
+      "author": 1,
+      "content": "comment",
+      "created_at": "2026-10-03T15:58:24.587Z",
+      "updated_at": "2026-10-03T15:58:24.587Z"
+    }
+  },
+  {
+    "model": "main.comment",
+    "pk": 4,
+    "fields": {
+      "post": 1,
+      "author": 1,
+      "content": "comment",
+      "created_at": "2026-10-03T15:58:36.159Z",
+      "updated_at": "2026-10-03T15:58:36.159Z"
+    }
+  },
+  {
+    "model": "main.comment",
+    "pk": 5,
+    "fields": {
+      "post": 1,
+      "author": 1,
+      "content": "comment",
+      "created_at": "2026-10-03T15:59:23.541Z",
+      "updated_at": "2026-10-03T15:59:23.541Z"
+    }
+  },
+  {
+    "model": "main.comment",
+    "pk": 6,
+    "fields": {
+      "post": 1,
+      "author": 1,
+      "content": "TES",
+      "created_at": "2026-10-03T16:01:42.144Z",
+      "updated_at": "2026-10-03T16:01:42.144Z"
+    }
+  },
+  {
+    "model": "main.comment",
+    "pk": 7,
+    "fields": {
+      "post": 2,
+      "author": 1,
+      "content": "Content",
+      "created_at": "2026-10-03T20:17:56.279Z",
+      "updated_at": "2026-10-03T20:17:56.280Z"
+    }
+  },
+  {
+    "model": "main.comment",
+    "pk": 8,
+    "fields": {
+      "post": 1,
+      "author": 1,
+      "content": "new",
+      "created_at": "2026-10-03T20:34:23.892Z",
+      "updated_at": "2026-10-03T20:34:23.892Z"
+    }
+  },
+  {
+    "model": "main.comment",
+    "pk": 9,
+    "fields": {
+      "post": 1,
+      "author": 1,
+      "content": "Admin Comment",
+      "created_at": "2026-10-03T20:34:33.039Z",
+      "updated_at": "2026-10-03T20:34:33.039Z"
+    }
+  },
+  {
+    "model": "main.comment",
+    "pk": 10,
+    "fields": {
+      "post": 4,
+      "author": 1,
+      "content": "Neew",
+      "created_at": "2026-10-05T07:52:06.648Z",
+      "updated_at": "2026-10-05T07:52:06.648Z"
+    }
+  }
+]

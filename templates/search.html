@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% if query %}
+    <h2>Post Contains "{{ query }}"</h2>
+
+    <h4>
+      {% with total_results=results.count %}
+        Found {{ total_results }} result {{ total_results|pluralize }}
+      {% endwith %}
+    </h4>
+
+    {% for post in results %}
+      <p>
+        <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+      </p>
+    {% empty %}
+      <p>There are no results for your query.</p>
+    {% endfor %}
+  {% endif %}
+{% endblock %}

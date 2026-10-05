@@ -27,8 +27,9 @@
             </li>
           {% endif %}
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-sm-2" type="search" placeholder="Search" />
+        <!-- In your template (e.g., search.html or a navbar) -->
+        <form class="d-flex" action="{% url 'main:post_search' %}" method="get">
+          <input class="form-control me-sm-2" type="search" name="query" placeholder="Search" />
           <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
         </form>
       </div>

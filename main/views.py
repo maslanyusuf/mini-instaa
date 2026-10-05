@@ -1,10 +1,14 @@
 from django.core.mail import send_mail
+from django.db.models import Q
 from django.db.models.aggregates import Count
+from django.contrib.postgres.search import SearchVector,SearchQuery,SearchRank
 from django.shortcuts import redirect, render
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.decorators.http import require_POST
 from taggit.models import Tag
-from main.forms import SharePostForm,CommentForm
+
+
+from main.forms import SharePostForm,CommentForm,SearchForm
 from .models import Post
 
 def feed(request,tag_slug=None):
@@ -28,6 +32,24 @@ def feed(request,tag_slug=None):
         posts = paginator.page(paginator.num_pages)
     return render(request, 'feed.html', {'posts': posts, 'tag': tag, 'tags': tags})
 
+
+def post_search(request):
+    form = SearchForm()
+    query = None
+    results = []
+
+    if 'query' in request.GET:
+        form = SearchForm(request.GET)
+        if form.is_valid():
+            query = form.cleaned_data['query']
+            search_vector = SearchVector('title', 'content')
+            search_query = SearchQuery(f"{query}:*")
+            search_rank = SearchRank(search_vector, search_query)
+            results = Post.published.filter(Q(title__icontains=query)|Q(content__icontains=query))
+
+    return render(request, 'search.html', {
+        'form': form, 'query': query, 'results': results,
+    })
 
 def post_detail(request, year, month, slug):
     try:

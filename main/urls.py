@@ -9,6 +9,7 @@ urlpatterns = [
     path('posts/tag/<slug:tag_slug>/', views.feed, name='tagged_posts'),
     path('posts/<int:post_id>/share/', views.share_post, name='share_post'),
     path('posts/<int:post_id>/comment/', views.add_comment, name='add_comment'),
+    path('posts/search/',views.post_search,name='post_search'),
     path('profile/', views.profile, name='profile'),
     path('explore/', views.explore, name='explore'),
     path('notifications/', views.notifications, name='notifications'),
